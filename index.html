@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio personal - Showcasing my projects and skills"
+    />
+    <meta name="keywords" content="portfolio, projects, developer" />
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <!-- Contenedor para alinear el texto y la imagen -->
+          <div class="nav__circle_background"></div>
+          <div class="nav__container">
+            <!-- Contenedor de texto -->
+            <div class="nav__container--text">
+              <!-- Nombre -->
+              <h1 class="nav__name">
+                <span class="nav__name--span">Dagoberto</span>
+                <span class="nav__name--span">Martínez Polo</span>
+              </h1>
+              <!-- Subtitulo -->
+              <h6 class="nav__subtitle">
+                Desarrollador Full-Stack Junior | TypeScript, React, Node.js
+              </h6>
+              <!-- Descripción -->
+              <h5 class="nav__description">
+                Desarrollador web junior con experiencia práctica creando
+                interfaces limpias y responsivas con HTML, CSS, JavaScript y
+                React, así como implementando lógica básica de back-end. Ha
+                trabajado en proyectos formativos que siguen procesos reales de
+                desarrollo, usando Git, GitHub y Figma. Disfruta colaborar en
+                equipo, mantener un código claro y resolver problemas de forma
+                estructurada. Motivada por seguir aprendiendo, asumir nuevos
+                retos y aprovechar oportunidades para crecer como desarrollador.
+              </h5>
+              <ul class="nav__links">
+                <li>
+                  <a href="#download_cv" class="nav__link">Descargar CV</a>
+                </li>
+                <li>
+                  <!-- TODO: Cambiar enlace a GitHub -->
+                  <a href="#github_projects" class="nav__link"
+                    >Enlace a GitHub</a
+                  >
+                </li>
+                <li><a href="#contact" class="nav__link">Hablemos</a></li>
+              </ul>
+            </div>
+            <!-- Foto de perfil -->
+            <img
+              src="./images/header_photo.jpg"
+              alt="Foto de perfil"
+              class="nav__profile_image"
+            />
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section id="about" class="skills_and_tools">
+          <h2 class="skills_and_tools__title">Habilidades y herramientas</h2>
+          <div class="skills_and_tools__container">
+            <img
+              class="skills_and_tools__icon"
+              src="./images/HTMLico.svg"
+              alt="Icono HTML"
+            />
+            <img
+              class="skills_and_tools__icon"
+              src="./images/CSSico.svg"
+              alt="Icono CSS"
+            />
+            <img
+              class="skills_and_tools__icon"
+              src="./images/JSico.svg"
+              alt="Icono JavaScript"
+            />
+            <img
+              class="skills_and_tools__icon"
+              src="./images/GITico.png"
+              alt="Icono Git"
+            />
+            <img
+              class="skills_and_tools__icon"
+              src="./images/GitHubico.svg"
+              alt="Icono GitHub"
+            />
+            <img
+              class="skills_and_tools__icon"
+              src="./images/GPTico.png"
+              alt="Icono GPT"
+            />
+          </div>
+        </section>
+        <section id="projects" class="projects">
+          <h2 class="projects__title">Proyectos destacados</h2>
+          <div class="projects__container">
+            <div class="project__container--card">
+              <div class="project__container--image">
+                <img
+                  src="./images/coffe_shop_project_img.jpg"
+                  alt="Imagen proyecto coffe-shop"
+                  class="project__image"
+                />
+                <div class="project__container--image--tools">
+                  <img
+                    class="project__image--tool"
+                    src="./images/HTMLico.svg"
+                    alt="Icono HTML"
+                  />
+                  <img
+                    class="project__image--tool"
+                    src="./images/CSSico.svg"
+                    alt="Icono CSS"
+                  />
+                </div>
+              </div>
+              <div class="project__container--desc">
+                <h3 class="project__container--title">
+                  Página web de una cafetería
+                </h3>
+                <p class="project__container--description">
+                  Desarrollo de una landing page responsiva para una cafetería
+                  siguiendo un brief de diseño. Incluye estructura semántica,
+                  maquetación con Flexbox, creación de secciones nuevas y un
+                  formulario de contacto funcional. Logro: Implementé desde cero
+                  el diseño completo de la página, organicé el proyecto con
+                  buenas prácticas y publiqué la versión final utilizando GitHub
+                  Pages.
+                </p>
+              </div>
+              <ul class="project__container--footer--links">
+                <li>
+                  <a href="#download_cv" class="project__footer--link"
+                    ><img src="./images/Union.svg" alt="Icono demo en vivo" />
+                    Demo en vivo</a
+                  >
+                </li>
+                <li>
+                  <!-- TODO: Cambiar enlace a GitHub -->
+                  <a href="#github_projects" class="project__footer--link"
+                    ><img src="./images/GitHublink.svg" alt="Icono GitHub"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="project__container--card">
+              <div class="project__container--image">
+                <img
+                  src="./images/X_project_img.jpg"
+                  alt="Imagen proyecto X"
+                  class="project__image"
+                />
+                <div class="project__container--image--tools">
+                  <img
+                    class="project__image--tool"
+                    src="./images/JSico.svg"
+                    alt="Icono JavaScript"
+                  />
+                  <img
+                    class="project__image--tool"
+                    src="./images/Atomico.svg"
+                    alt="Icono Atomico"
+                  />
+                </div>
+              </div>
+              <div class="project__container--desc">
+                <h3 class="project__container--title">Mi proyecto</h3>
+                <p class="project__container--description">
+                  Descripción del proyecto
+                </p>
+              </div>
+              <ul class="project__container--footer--links">
+                <li>
+                  <a href="#download_cv" class="project__footer--link"
+                    ><img src="./images/Union.svg" alt="Icono demo en vivo" />
+                    Demo en vivo</a
+                  >
+                </li>
+                <li>
+                  <!-- TODO: Cambiar enlace a GitHub -->
+                  <a href="#github_projects" class="project__footer--link"
+                    ><img src="./images/GitHublink.svg" alt="Icono GitHub"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__circle_background"></div>
+        <h2 class="footer__title">Contacto</h2>
+        <a href="mailto:student@tripleten.com" class="footer__email"
+          >student@tripleten.com</a
+        >
+        <div class="footer__container--social-links">
+          <a href="#github_projects" class="footer__social_link"
+            ><img src="./images/LinkedInico.svg" alt="Icono GitHub"
+          /></a>
+          <a href="#linkedin_profile" class="footer__social_link"
+            ><img src="./images/Facebookico.svg" alt="Icono LinkedIn"
+          /></a>
+          <a href="#linkedin_profile" class="footer__social_link"
+            ><img src="./images/IFico.svg" alt="Icono Instagram"
+          /></a>
+          <a href="#linkedin_profile" class="footer__social_link"
+            ><img src="./images/Xico.svg" alt="Icono X"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
