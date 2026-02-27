@@ -83,6 +83,12 @@
   --profile-image-height-tablet: 280px;
   --profile-image-width-mobile: 280px;
   --profile-image-height-mobile: 280px;
+
+  --project-card__body-padding-website: 30px;
+  --project-card__body-padding-mobile: 20px;
+
+  --project-card__actions-padding-left-website: 30px;
+  --project-card__actions-padding-left-mobile: 20px;
 }
 
 /* =========================
@@ -115,7 +121,7 @@ body {
 }
 
 /* =========================
-   HERO 
+   HERO
    ========================= */
 
 .site-header {
@@ -239,7 +245,7 @@ body {
 }
 
 /* =========================
-   SKILLS 
+   SKILLS
    ========================= */
 
 .skills {
@@ -337,7 +343,7 @@ body {
 
 .project-card__body {
   background-color: #1c1c1c;
-  padding: 30px;
+  padding: var(--project-card__body-padding-website);
 }
 
 .project-card__title {
@@ -367,9 +373,9 @@ body {
   flex-direction: row;
   gap: 20px;
   align-items: center;
-  margin: 0 0 30px;
+  margin: 0 0 var(--project-card__body-padding-website) 0;
   padding: 0;
-  padding-left: 30px;
+  padding-left: var(--project-card__actions-padding-left-website);
   background-color: #1c1c1c;
 }
 
@@ -395,7 +401,7 @@ body {
 }
 
 /* =========================
-   CONTACT 
+   CONTACT
    ========================= */
 
 .contact {
@@ -587,11 +593,14 @@ body {
   }
 
   .project-card__body {
-    padding: 20px;
+    padding: var(--project-card__body-padding-mobile);
   }
 
   .project-card__actions {
     margin-bottom: 20px;
+    margin: 0 0 var(--project-card__body-padding-mobile) 0;
+
+    padding-left: var(--project-card__actions-padding-left-mobile);
   }
 
   .project-card__badges {
