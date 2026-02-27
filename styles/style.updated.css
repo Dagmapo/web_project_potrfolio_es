@@ -102,11 +102,11 @@ body {
   color: var(--color-text);
   background-color: var(--color-background);
   max-width: 1440px;
-  margin: auto;
+  margin: 0;
   padding: 0;
 }
 
-/* Contenedor general de la página */
+/* Contenedor general de la página (antes .page) */
 .layout {
   margin: 0;
   padding-right: var(--padding-right-website);
@@ -115,7 +115,7 @@ body {
 }
 
 /* =========================
-   HERO 
+   HERO (antes header/nav__*)
    ========================= */
 
 .site-header {
@@ -239,7 +239,7 @@ body {
 }
 
 /* =========================
-   SKILLS 
+   SKILLS (antes skills_and_tools)
    ========================= */
 
 .skills {
@@ -270,6 +270,10 @@ body {
   flex-wrap: wrap;
 }
 
+.skills__icon {
+  /* No cambies el tamaño por defecto: se controla en media queries */
+}
+
 /* =========================
    PROJECTS
    ========================= */
@@ -290,7 +294,7 @@ body {
   margin: 0px;
 }
 
-/* Contenedor de proyectos */
+/* Contenedor de proyectos (antes .projects__container) */
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -301,6 +305,7 @@ body {
   z-index: 2;
 }
 
+/* Card (antes .project__container--card) */
 .project-card {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -395,7 +400,7 @@ body {
 }
 
 /* =========================
-   CONTACT 
+   CONTACT (antes footer__*)
    ========================= */
 
 .contact {
@@ -454,6 +459,10 @@ body {
   gap: 80px;
   align-content: space-between;
   width: 100%;
+}
+
+.contact__social-link {
+  /* mantiene el mismo comportamiento visual actual */
 }
 
 /* =========================

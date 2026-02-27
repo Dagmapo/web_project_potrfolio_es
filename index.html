@@ -12,25 +12,25 @@
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <div class="page">
-      <header class="header">
-        <nav class="nav">
-          <!-- Contenedor para alinear el texto y la imagen -->
-          <div class="nav__circle_background"></div>
-          <div class="nav__container">
-            <!-- Contenedor de texto -->
-            <div class="nav__container--text">
-              <!-- Nombre -->
-              <h1 class="nav__name">
-                <span class="nav__name--span">Dagoberto</span>
-                <span class="nav__name--span">Martínez Polo</span>
+    <div class="layout">
+      <header class="site-header">
+        <nav class="hero" aria-label="Navegación principal">
+          <!-- Glow decorativo (no interactivo) -->
+          <div class="hero__glow" aria-hidden="true"></div>
+
+          <div class="hero__row">
+            <!-- Texto principal -->
+            <div class="hero__content">
+              <h1 class="hero__name">
+                <span class="hero__name-line">Dagoberto</span>
+                <span class="hero__name-line">Martínez Polo</span>
               </h1>
-              <!-- Subtitulo -->
-              <h6 class="nav__subtitle">
+
+              <h6 class="hero__subtitle">
                 Desarrollador Full-Stack Junior | TypeScript, React, Node.js
               </h6>
-              <!-- Descripción -->
-              <h5 class="nav__description">
+
+              <p class="hero__about">
                 Desarrollador web junior con experiencia práctica creando
                 interfaces limpias y responsivas con HTML, CSS, JavaScript y
                 React, así como implementando lógica básica de back-end. Ha
@@ -39,93 +39,97 @@
                 equipo, mantener un código claro y resolver problemas de forma
                 estructurada. Motivada por seguir aprendiendo, asumir nuevos
                 retos y aprovechar oportunidades para crecer como desarrollador.
-              </h5>
-              <ul class="nav__links">
+              </p>
+
+              <ul class="hero__links">
                 <li>
-                  <a href="#download_cv" class="nav__link">Descargar CV</a>
+                  <a href="#download_cv" class="hero__link">Descargar CV</a>
                 </li>
                 <li>
-                  <!-- TODO: Cambiar enlace a GitHub -->
-                  <a href="#github_projects" class="nav__link"
+                  <a href="https://github.com/dagmapo" class="hero__link"
                     >Enlace a GitHub</a
                   >
                 </li>
-                <li><a href="#contact" class="nav__link">Hablemos</a></li>
+                <li><a href="#contact" class="hero__link">Hablemos</a></li>
               </ul>
             </div>
+
             <!-- Foto de perfil -->
             <img
               src="./images/header_photo.jpg"
               alt="Foto de perfil"
-              class="nav__profile_image"
+              class="hero__photo"
             />
           </div>
         </nav>
       </header>
-      <main>
-        <section id="about" class="skills_and_tools">
-          <h2 class="skills_and_tools__title">Habilidades y herramientas</h2>
-          <div class="skills_and_tools__container">
+
+      <main class="content">
+        <section id="about" class="skills">
+          <h2 class="skills__title">Habilidades y herramientas</h2>
+          <div class="skills__icons">
             <img
-              class="skills_and_tools__icon"
+              class="skills__icon"
               src="./images/HTMLico.svg"
               alt="Icono HTML"
             />
             <img
-              class="skills_and_tools__icon"
+              class="skills__icon"
               src="./images/CSSico.svg"
               alt="Icono CSS"
             />
             <img
-              class="skills_and_tools__icon"
+              class="skills__icon"
               src="./images/JSico.svg"
               alt="Icono JavaScript"
             />
             <img
-              class="skills_and_tools__icon"
+              class="skills__icon"
               src="./images/GITico.png"
               alt="Icono Git"
             />
             <img
-              class="skills_and_tools__icon"
+              class="skills__icon"
               src="./images/GitHubico.svg"
               alt="Icono GitHub"
             />
             <img
-              class="skills_and_tools__icon"
+              class="skills__icon"
               src="./images/GPTico.png"
               alt="Icono GPT"
             />
           </div>
         </section>
+
         <section id="projects" class="projects">
           <h2 class="projects__title">Proyectos destacados</h2>
-          <div class="projects__container">
-            <div class="project__container--card">
-              <div class="project__container--image">
+
+          <div class="projects__grid">
+            <article class="project-card">
+              <div class="project-card__media">
                 <img
                   src="./images/coffe_shop_project_img.jpg"
                   alt="Imagen proyecto coffe-shop"
-                  class="project__image"
+                  class="project-card__image"
                 />
-                <div class="project__container--image--tools">
+
+                <div class="project-card__badges">
                   <img
-                    class="project__image--tool"
+                    class="project-card__badge"
                     src="./images/HTMLico.svg"
                     alt="Icono HTML"
                   />
                   <img
-                    class="project__image--tool"
+                    class="project-card__badge"
                     src="./images/CSSico.svg"
                     alt="Icono CSS"
                   />
                 </div>
               </div>
-              <div class="project__container--desc">
-                <h3 class="project__container--title">
-                  Página web de una cafetería
-                </h3>
-                <p class="project__container--description">
+
+              <div class="project-card__body">
+                <h3 class="project-card__title">Página web de una cafetería</h3>
+                <p class="project-card__text">
                   Desarrollo de una landing page responsiva para una cafetería
                   siguiendo un brief de diseño. Incluye estructura semántica,
                   maquetación con Flexbox, creación de secciones nuevas y un
@@ -135,84 +139,103 @@
                   Pages.
                 </p>
               </div>
-              <ul class="project__container--footer--links">
+
+              <ul class="project-card__actions">
                 <li>
-                  <a href="#download_cv" class="project__footer--link"
-                    ><img src="./images/Union.svg" alt="Icono demo en vivo" />
-                    Demo en vivo</a
-                  >
+                  <a href="#DEMO" class="project-card__action">
+                    <img src="./images/Union.svg" alt="Icono demo en vivo" />
+                    Demo en vivo
+                  </a>
                 </li>
                 <li>
-                  <!-- TODO: Cambiar enlace a GitHub -->
-                  <a href="#github_projects" class="project__footer--link"
-                    ><img src="./images/GitHublink.svg" alt="Icono GitHub"
-                  /></a>
+                  <a
+                    href="https://github.com/Dagmapo/web_project_coffeeshop_es"
+                    class="project-card__action"
+                  >
+                    <img src="./images/GitHublink.svg" alt="Icono GitHub" />
+                  </a>
                 </li>
               </ul>
-            </div>
-            <div class="project__container--card">
-              <div class="project__container--image">
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__media">
                 <img
                   src="./images/X_project_img.jpg"
                   alt="Imagen proyecto X"
-                  class="project__image"
+                  class="project-card__image"
                 />
-                <div class="project__container--image--tools">
+
+                <div class="project-card__badges">
                   <img
-                    class="project__image--tool"
+                    class="project-card__badge"
                     src="./images/JSico.svg"
                     alt="Icono JavaScript"
                   />
                   <img
-                    class="project__image--tool"
+                    class="project-card__badge"
                     src="./images/Atomico.svg"
                     alt="Icono Atomico"
                   />
                 </div>
               </div>
-              <div class="project__container--desc">
-                <h3 class="project__container--title">Mi proyecto</h3>
-                <p class="project__container--description">
-                  Descripción del proyecto
-                </p>
+
+              <div class="project-card__body">
+                <h3 class="project-card__title">Mi proyecto</h3>
+                <p class="project-card__text">Descripción del proyecto</p>
               </div>
-              <ul class="project__container--footer--links">
+
+              <ul class="project-card__actions">
                 <li>
-                  <a href="#download_cv" class="project__footer--link"
-                    ><img src="./images/Union.svg" alt="Icono demo en vivo" />
-                    Demo en vivo</a
-                  >
+                  <a href="#DEMO" class="project-card__action">
+                    <img src="./images/Union.svg" alt="Icono demo en vivo" />
+                    Demo en vivo
+                  </a>
                 </li>
                 <li>
-                  <!-- TODO: Cambiar enlace a GitHub -->
-                  <a href="#github_projects" class="project__footer--link"
-                    ><img src="./images/GitHublink.svg" alt="Icono GitHub"
-                  /></a>
+                  <a
+                    href="https://github.com/Dagmapo"
+                    class="project-card__action"
+                  >
+                    <img src="./images/GitHublink.svg" alt="Icono GitHub" />
+                  </a>
                 </li>
               </ul>
-            </div>
+            </article>
           </div>
         </section>
       </main>
-      <footer class="footer">
-        <div class="footer__circle_background"></div>
-        <h2 class="footer__title">Contacto</h2>
-        <a href="mailto:student@tripleten.com" class="footer__email"
+
+      <footer class="contact">
+        <div class="contact__glow" aria-hidden="true"></div>
+
+        <h2 class="contact__title">Contacto</h2>
+        <a href="mailto:student@tripleten.com" class="contact__email"
           >student@tripleten.com</a
         >
-        <div class="footer__container--social-links">
-          <a href="#github_projects" class="footer__social_link"
-            ><img src="./images/LinkedInico.svg" alt="Icono GitHub"
-          /></a>
-          <a href="#linkedin_profile" class="footer__social_link"
-            ><img src="./images/Facebookico.svg" alt="Icono LinkedIn"
-          /></a>
-          <a href="#linkedin_profile" class="footer__social_link"
-            ><img src="./images/IFico.svg" alt="Icono Instagram"
-          /></a>
-          <a href="#linkedin_profile" class="footer__social_link"
-            ><img src="./images/Xico.svg" alt="Icono X"
-          /></a>
+
+        <div class="contact__social" id="contact">
+          <a
+            href="https://www.linkedin.com/in/dagobertomartinezpoloing"
+            class="contact__social-link"
+          >
+            <img src="./images/LinkedInico.svg" alt="Icono LinkedIn" />
+          </a>
+          <a
+            href="https://www.facebook.com/Dago.Martinez.Polo?locale=es_LA"
+            class="contact__social-link"
+          >
+            <img src="./images/Facebookico.svg" alt="Icono Facebook" />
+          </a>
+          <a
+            href="https://www.instagram.com/dagmapo"
+            class="contact__social-link"
+          >
+            <img src="./images/IFico.svg" alt="Icono Instagram" />
+          </a>
+          <a href="https://x.com/dagmapo" class="contact__social-link">
+            <img src="./images/Xico.svg" alt="Icono X" />
+          </a>
         </div>
       </footer>
     </div>
